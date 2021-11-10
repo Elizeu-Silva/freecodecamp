@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com forumlario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  
+    <div class="container">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <form action="" id="survey-form">
+  
+        <div class="grupo">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name"  placeholder="Enter your name" required>
+        </div>
+  
+        <div class="grupo">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email"  placeholder="Enter yout Email" required>
+        </div>
+  
+        <div class="grupo">
+          <label id="number-label" for="number">Age<span class="light">(opitional)</span></label>
+          <input type="number" name="age" id="number"  placeholder="Age" min="14" max="99" required>
+        </div>
+  
+        <div class="grupo">
+          <p>Which option best describes your current role?</p>
+          <select name="current-role" id="dropdown">
+            <option value="Student">Student</option>
+            <option value="Job">Full Time Job</option>
+            <option value="Learner">Full time Learner</option>
+            <option value="Prefer-no">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+  
+        <div class="grupo">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label for="Definitely">
+            <input type="radio" name="recommend" value="Definitely" id="Definitely" class="checkbox-radio">
+            Definitely
+          </label>
+  
+          <label for="Maybe">
+            <input type="radio" name="recommend" value="Maybe" id="Maybe" class="checkbox-radio">
+            Maybe
+          </label>
+  
+          <label for="Not-sure">
+            <input type="radio" name="recommend" value="Not-sure" id="Not-sure" class="checkbox-radio">
+            Not sure
+          </label>
+        </div>
+        <div class="checkbox">
+          <p>What would you like to see improved? <span class="light">(Check all that apply)</span></p>
+  
+          <label for="Front-end">
+            <input type="checkbox" name="preference" id="Front-end" class="checkbox-radio">
+            Front-end Projects
+          </label>
+  
+          <label for="Back-end">
+            <input type="checkbox" name="preference" id="Back-end" value="Back-end" class="checkbox-radio">
+            Back-end Projects
+          </label>
+  
+          <label for="Data-Visualization">
+            <input type="checkbox" name="preference" id="Data-Visualization" value="Data-Visualization" class="checkbox-radio">
+            Data Visualization
+          </label>
+  
+          <label for="Challenges">
+            <input type="checkbox" name="preference" id="Challenges" value="Challenges" class="checkbox-radio">
+            Challenges
+          </label>
+  
+          <label for="Open-Source-Community">
+            <input type="checkbox" name="preference" id="Open-Source-Community" value="Open-Source-Community" class="checkbox-radio">
+            Open Source Community
+          </label>
+  
+          <label for="Gitter-help-rooms">
+            <input type="checkbox" name="preference" id="Gitter-help-rooms" value="Gitter-help-rooms" class="checkbox-radio">
+            Gitter help rooms
+          </label>
+  
+          <label for="Videos">
+            <input type="checkbox" name="preference" id="Videos" value="Videos" class="checkbox-radio">
+            Videos
+          </label>
+  
+          <label for="City-Meetups">
+            <input type="checkbox" name="preference" id="City-Meetups" value="City-Meetups" class="checkbox-radio">
+            City Meetups
+          </label>
+  
+          <label for="Wiki">
+            <input type="checkbox" name="preference" id="Wiki" value="Wiki" class="checkbox-radio">
+            Wiki
+          </label>
+  
+          <label for="Forum">
+            <input type="checkbox" name="preference" id="Forum" value="Forum" class="checkbox-radio">
+            Forum
+          </label>
+  
+  
+          <label for="Additional-Courses">
+            <input type="checkbox" name="preference" id="Additional-Courses" value="Additional-Courses" class="checkbox-radio">
+            Additional Courses
+          </label>
+  
+          <div class="grupo">
+            <p>Any comments or suggestions?</p>
+            <textarea name="coments" id="coments"  placeholder="leave your opinion..."></textarea>
+          </div>
+  
+          <div class="submit">
+            <button type="submit" id="submit">submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</main>
+
+
+</body>
+</html>
